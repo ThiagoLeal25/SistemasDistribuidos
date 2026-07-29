@@ -10,11 +10,11 @@ Anotações de aula:
 - Utilizaremos sempre modelo TCP/IP
 - Sockets e pipelines -> físico ou lógico
 - Alguém precisa ser o socket server e o outro o socket client
-- Thread é a partição de um processamento
+- Thread é um mini processo
 - Processamento concomitante(Concorrente) lida com várias tarefas ao mesmo tempo alternando o uso do processador (Sistemas heterogeneos, baixo desempenho)
 - Processamento paralelo executa várias tarefas de forma estritamente simultânea (Sistema homogeneo)
 - Comunicação é a troca de informações entre duas máquinas
-
+- Seção crítica (Sincronismo por tempo ou ocupação)
 
 
 
