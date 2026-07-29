@@ -1,0 +1,26 @@
+Anotações de aula:
+
+- Sistemas distribuidos: processos que rodam em outras máquinas. 
+- Cluster e Grid.
+- 3 Formas de comunicação: Broadcast, Multicast e Unicast.
+- Sistemas não fazem o que não sabem/não são capazes.
+- Servidor e peer to peer (Passa pelo servidor antes/ máquinas conversam entre si)
+- O que fazer caso escrita e leitura ocorrem ao mesmo tempo? Escrever > Ler
+- Model, view, controller organizados em classes
+- Utilizaremos sempre modelo TCP/IP
+- Sockets e pipelines -> físico ou lógico
+- Alguém precisa ser o socket server e o outro o socket client
+- Thread é a partição de um processamento
+- Processamento concomitante(Concorrente) lida com várias tarefas ao mesmo tempo alternando o uso do processador (Sistemas heterogeneos, baixo desempenho)
+- Processamento paralelo executa várias tarefas de forma estritamente simultânea (Sistema homogeneo)
+- Comunicação é a troca de informações entre duas máquinas
+
+
+
+
+
+
+23
+
+
+
