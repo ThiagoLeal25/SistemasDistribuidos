@@ -15,8 +15,8 @@ Anotações de aula:
 - Processamento paralelo executa várias tarefas de forma estritamente simultânea (Sistema homogeneo)
 - Comunicação é a troca de informações entre duas máquinas
 - Seção crítica (Sincronismo por tempo ou ocupação)
-
-
+- Threads servem para ajudar na comunicação entre as máquinas
+- Por que a comunicação é bloqueante? Solução -> Thread
 
 
 
