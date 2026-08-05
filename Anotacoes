@@ -18,9 +18,15 @@ Anotações de aula:
 - Threads servem para ajudar na comunicação entre as máquinas
 - Por que a comunicação é bloqueante? Solução -> Thread
 
+05/08
 
-
-23
-
-
-
+-Sistemas distribuídos (Grid; Fracamente acoplados; heterogêneas)
+-Para que usar sistemas distribuídos? Compartilhar recursos
+-Como sistemas distribuídos operam? Comunicação (TCP/IP ou UDP)
+-Utilizar o protocolo quando quiser se comunicar
+-PHP é uma linguagem web
+-Reader = Sender
+-Writer = Receiver
+-Threads envolvem(Wrapping) rotinas ou tarefas/instruções
+-Thread com seção crítica = memória compartilhada
+-Thread vai ser o recurso para desbloquear leitura e escrita no socket
