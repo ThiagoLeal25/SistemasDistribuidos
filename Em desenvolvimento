@@ -1,0 +1,63 @@
+from concurrent.futures import ThreadPoolExecutor
+from typing import List
+
+
+def read_numbers(path: str) -> List[int]:
+    nums: List[int] = []
+    with open(path, "r", encoding="utf-8") as f:
+        for i, line in enumerate(f, start=1):
+            s = line.strip()
+            if not s:
+                continue
+            try:
+                nums.append(int(s))
+            except ValueError:
+                raise ValueError(f"Linha {i} em {path} não é um inteiro: '{s}'")
+    return nums
+
+
+def read_names(path: str) -> List[str]:
+    names: List[str] = []
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            s = line.strip()
+            if s:
+                names.append(s)
+    return names
+
+
+def display_numbers(nums: List[int]) -> None:
+    # recebe cópia da lista para evitar memória compartilhada
+    print("Lista de números:")
+    for n in nums:
+        print(n)
+
+
+def display_names(names: List[str]) -> None:
+    # recebe cópia da lista para evitar memória compartilhada
+    print("Lista de nomes:")
+    for s in names:
+        print(s)
+
+
+if __name__ == "__main__":
+    with ThreadPoolExecutor(max_workers=2) as exec_read:
+        future_nums = exec_read.submit(read_numbers, "numeros.txt")
+        future_names = exec_read.submit(read_names, "nomes.txt")
+
+        try:
+            numbers = future_nums.result()
+            names = future_names.result()
+        except FileNotFoundError as e:
+            print(f"Arquivo não encontrado: {e.filename}")
+        except Exception as e:
+            print(f"Erro durante leitura: {e}")
+        else:
+            # criar cópias e exibir em threads separadas
+            nums_copy = list(numbers)
+            names_copy = list(names)
+
+            with ThreadPoolExecutor(max_workers=2) as exec_disp:
+                exec_disp.submit(display_numbers, nums_copy)
+                exec_disp.submit(display_names, names_copy)
+
