@@ -30,3 +30,15 @@ Anotações de aula:
 -Threads envolvem(Wrapping) rotinas ou tarefas/instruções
 -Thread com seção crítica = memória compartilhada
 -Thread vai ser o recurso para desbloquear leitura e escrita no socket
+
+12/08
+
+Thread é necessário sincronizar
+Pesquisar a respeito MVC
+Fazer os exercícios em dontpad.com/sdufn
+Os repositório do professor pode ser encontrado em https://github.com/alexandrezamberlan/sistemasDistribuidos
+As threads são muito úteis quando é necessário múltiplas tarefas ao mesmo tempo (ver exemplo do pong)
+
+
+
+
