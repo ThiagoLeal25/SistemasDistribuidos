@@ -39,6 +39,17 @@ Fazer os exercícios em dontpad.com/sdufn
 Os repositório do professor pode ser encontrado em https://github.com/alexandrezamberlan/sistemasDistribuidos
 As threads são muito úteis quando é necessário múltiplas tarefas ao mesmo tempo (ver exemplo do pong)
 
-
-
-
+09/09
+-Conceito de sockets
+-Sockets NECESSITAM de threads para funcionar.
+-Sockets são um meio lógico para duas máquinas se comunicarem
+-Middleware REST e middleware SOAP (Ninguém usa o SOAP)
+-REST/Json é o padrão
+-Serializar significa mandar em pequenas partes um pacote
+-Desserialização é pegar tudo e juntar
+-Se é serializável, pode ser mandado num socket
+-Transiente e persistente
+-Um exemplo de persistencia é o whatsapp
+-Exemplo de transiente é: msg só é enviada se o destinatário estiver online ou ligado (destinatário precisa existir)
+-O socket precisa saber o servidor e qual porta ele está usando
+-Fluxo clássico: servidor -> cliente
