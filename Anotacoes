@@ -53,3 +53,11 @@ As threads são muito úteis quando é necessário múltiplas tarefas ao mesmo t
 -Exemplo de transiente é: msg só é enviada se o destinatário estiver online ou ligado (destinatário precisa existir)
 -O socket precisa saber o servidor e qual porta ele está usando
 -Fluxo clássico: servidor -> cliente
+
+
+23/09
+
+-O servidor precisa anunciar pro cliente o seu IP
+-Para tratar de N threads -> POOL
+-No Java, não pode declarar Input antes do Output
+-Por que no protocolo UDP se passam bytes? Porque bytes pode ser lido por qualquer tecnologia.
