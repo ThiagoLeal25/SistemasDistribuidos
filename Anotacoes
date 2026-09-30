@@ -61,3 +61,7 @@ As threads são muito úteis quando é necessário múltiplas tarefas ao mesmo t
 -Para tratar de N threads -> POOL
 -No Java, não pode declarar Input antes do Output
 -Por que no protocolo UDP se passam bytes? Porque bytes pode ser lido por qualquer tecnologia.
+
+30/09
+
+-UDP é um protocolo de comunicação simples para envio rápido de dados
