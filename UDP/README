@@ -1,0 +1,38 @@
+Como executar o projeto:
+
+Abra o projeto no VS Code
+
+Extraia o arquivo ZIP e abra a pasta `ProjetoUDP` no VS Code.
+
+A estrutura deve ser:
+
+ProjetoUDP/
+├── Cliente/
+└── Servidor/
+
+Abra um terminal no VS Code.
+
+Digite:
+
+cd Servidor
+
+Depois:
+
+python Servidor.py
+
+Deixe esse terminal aberto.
+
+Abra um segundo terminal no VS Code.
+
+Digite:
+
+cd Cliente
+
+Depois:
+
+python GUI.py
+
+A interface gráfica do cliente será aberta.
+
+
+Os tokens aparecerão no terminal que o servidor foi iniciado assim que o cliente solicitar eles.
