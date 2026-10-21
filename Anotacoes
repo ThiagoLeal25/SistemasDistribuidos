@@ -65,3 +65,14 @@ As threads são muito úteis quando é necessário múltiplas tarefas ao mesmo t
 30/09
 
 -UDP é um protocolo de comunicação simples para envio rápido de dados
+
+21/10
+
+-TCP é feito para arquiteturas servidor-cliente
+-UDP é feito para arquiteturas p2p (peer-to-peer)
+-Python utiliza RPC
+-Java utiliza RMI
+
+
+
+
